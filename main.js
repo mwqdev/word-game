@@ -18,9 +18,7 @@ var commonWords = [
 var chooseRandomWord = function(array) {
   var randomWord;
   var index = Math.floor((Math.random() * array.length) - 0.1);
-  console.log(index);
   randomWord = array[index];
-  console.log(randomWord);
   return randomWord;
 }
 
