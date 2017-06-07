@@ -47,7 +47,7 @@ var checkForCharacter = function(character) {
           if (victory === false) {
             return wordChar;
           } else {
-            console.log('You win!'); // If every character in `chosenWord` word has been passed to this function, console.log "you guessed it"
+            console.log('You win! ' + 'The word was "' + chosenWord + '"'); // If every character in `chosenWord` word has been passed to this function, console.log "you guessed it"
             console.log('---------');
             console.log('Starting new game');
             console.log('---------');
@@ -61,6 +61,8 @@ var checkForCharacter = function(character) {
         } else {
           return false; // The function should return false if the character is not in the given word
         }
+      } else {
+        console.log('You\'re out of attempts. Refresh the page to try again.');
       }
     }
   }
